@@ -9,7 +9,7 @@ var data = {
 			art_url: "https://bsky.app/profile/exaltedbrand.bsky.social/post/3lhyl4tr73k2p",
 			desc: "fighting heroes by moonlight / winning buns by daylight / never running from a real fight / she is the one wishing me a happy birthday 🌻🎂",
 			date_str: "2/12/25",
-			tags: ["fireemblem, thrasir, gift"],
+			tags: ["fireemblem", "thrasir", "gift"],
 			hidden: false
 		},
 				{
@@ -21,8 +21,8 @@ var data = {
 			art_url: "",
 			desc: "",
 			date_str: "The others teased him about it, of course. That no matter how long or far they traveled, Tiz would always be a shepherd.",
-			tags: ["bravelydefault, tiz, agnes, edea, ringabel, basedonfic, gift"],
-			hidden: true
+			tags: ["bravelydefault", "tiz", "agnes", "edea", "ringabel", "basedonfic", "gift"],
+			hidden: false
 		},
 		{
 			src: [""],
