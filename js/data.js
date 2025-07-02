@@ -1,6 +1,19 @@
 var data = {
 	images: [
 		{
+			src: [""],
+			thumbnail: "",
+			title: "",
+			artist: "",
+			artist_url: "",
+			art_url: "",
+			desc: "",
+			date_str: "",
+			tags: ["fireemblem", "bravelydefault", "thrasir", "tiz", "agnes", "edea", "ringabel", "basedonfic", "gift"],
+			hidden: true
+		},
+		
+		{
 			src: ["https://cdn.imgchest.com/files/y8xcnkvn3l4.jpg"],
 			thumbnail: "https://cdn.imgchest.com/files/y8xcnlqqlb4.png",
 			title: "Untitled Bunny Suit Gift Art",
