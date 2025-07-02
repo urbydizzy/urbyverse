@@ -1,6 +1,5 @@
 var data = {
 	images: [
-
 		{
 			src: ["https://cdn.imgchest.com/files/y8xcnkvn3l4.jpg"],
 			thumbnail: "https://cdn.imgchest.com/files/y8xcnlqqlb4.png",
@@ -13,7 +12,6 @@ var data = {
 			tags: ["fireemblem"],
 			hidden: false
 		},
-
 		{
 			src: [""],
 			thumbnail: "",
