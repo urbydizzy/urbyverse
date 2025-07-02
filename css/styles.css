@@ -7,7 +7,7 @@ body {
 	text-align: center;
 }
 #sidebar {
-	background-color: #3ee28a;
+	background-color: #26a05f ;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	border-bottom-left-radius: 10px;
@@ -45,7 +45,7 @@ body {
 	color: white;
 }
 #gallery-container {
-	background-color: #3ee28a;
+	background-color: #26a05f ;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	padding-bottom: 15px;
@@ -90,7 +90,7 @@ body {
 	max-width: 95%;
 }
 .modal-content {
-	background-color: #3ee28a;
+	background-color: #26a05f ;
 }
 .modal-header {
 	border-bottom: 1px solid #68ab83 ;
@@ -227,7 +227,7 @@ a:hover, a:active {
 @media (max-width: 767px) {
 	/* Small devices (tablets, 768px and less) */
 	body {
-		background-color: #3ee28a;
+		background-color: #26a05f ;
 	}
 	#gallery {
 		-webkit-column-count: 2; /* Chrome, Safari, Opera */
