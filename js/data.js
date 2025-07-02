@@ -11,7 +11,7 @@ var data = {
 			date_str: "",
 			tags: [""],
 			hidden: false
-		}
+		},
 		{
 			src: [""],
 			thumbnail: "",
