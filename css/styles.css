@@ -1,6 +1,6 @@
 body {
 	background-color:  #658475 ;
-	color: #5d5179;
+	color: white;
 	font-family: 'Roboto', sans-serif;
 }
 #sidebar-container {
@@ -30,7 +30,7 @@ body {
 	border: none;
 	border-radius: 0.25rem;
 	padding: 10px;
-	background-color: #D2A1B8;
+	background-color: #666a80;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 .sidebar-item-button:hover {
@@ -38,11 +38,11 @@ body {
 	cursor: pointer;
 }
 .sidebar-item-button-link {
-	color: #5d5179;
+	color: white;
 	text-decoration: none;
 }
 .sidebar-item-button-link:hover {
-	color: #5d5179;
+	color: white;
 }
 #gallery-container {
 	background-color: #CACEBA ;
@@ -82,7 +82,7 @@ body {
 	text-align: center;
 }
 .modal-dialog {
-	color: #5d5179;
+	color: white;
 	font-family: Arial;
 	display: inline-block;
 	width: 100%;
@@ -165,8 +165,8 @@ a:hover, a:active {
 
 #dropdownMenuLink {
 	color: #fff;
-	background-color: #D2A1B8;
-	border-color: #D2A1B8;
+	background-color: #666a80;
+	border-color: #666a80;
 }
 #dropdownMenuLink:hover, #dropdownMenuLink:active, #dropdownMenuLink:focus {
 	background-color: #658475 ;
@@ -182,21 +182,21 @@ a:hover, a:active {
 	float: left;
 	margin-left: 10px;
 	width: 50px;
-	color: #5d5179;
+	color: white;
 	border: none;
 	padding: 0.4375rem 0.75rem;
 	border-radius: 0.25rem;
-	background-color: #D2A1B8;
+	background-color: #666a80;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 .shuffle-button:hover {
 	background-color: #658475 ;
 	cursor: pointer;
-	color: #5d5179;
+	color: white;
 }
 .accordion-button {
-	background-color: #D2A1B8;
-	color: #5d5179;
+	background-color: #666a80;
+	color: white;
 }
 .accordion-button:not(.collapsed) {
 	color: black;
@@ -208,8 +208,8 @@ a:hover, a:active {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");	
 }
 .accordion-body {
-	background-color: #D2A1B8;
-	color: #5d5179;
+	background-color: #666a80;
+	color: white;
 }
 .series-link {
 	text-decoration: underline;
