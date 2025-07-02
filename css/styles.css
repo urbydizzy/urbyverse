@@ -1,6 +1,6 @@
 body {
 	background-color:  #658475 ;
-	color: white;
+	color: #5d5179;
 	font-family: 'Roboto', sans-serif;
 }
 #sidebar-container {
@@ -38,11 +38,11 @@ body {
 	cursor: pointer;
 }
 .sidebar-item-button-link {
-	color: white;
+	color: #5d5179;
 	text-decoration: none;
 }
 .sidebar-item-button-link:hover {
-	color: white;
+	color: #5d5179;
 }
 #gallery-container {
 	background-color: #CACEBA ;
@@ -82,7 +82,7 @@ body {
 	text-align: center;
 }
 .modal-dialog {
-	color: white;
+	color: #5d5179;
 	font-family: Arial;
 	display: inline-block;
 	width: 100%;
@@ -182,7 +182,7 @@ a:hover, a:active {
 	float: left;
 	margin-left: 10px;
 	width: 50px;
-	color: white;
+	color: #5d5179;
 	border: none;
 	padding: 0.4375rem 0.75rem;
 	border-radius: 0.25rem;
@@ -192,11 +192,11 @@ a:hover, a:active {
 .shuffle-button:hover {
 	background-color: #658475 ;
 	cursor: pointer;
-	color: white;
+	color: #5d5179;
 }
 .accordion-button {
 	background-color: #666a80;
-	color: white;
+	color: #5d5179;
 }
 .accordion-button:not(.collapsed) {
 	color: black;
@@ -209,7 +209,7 @@ a:hover, a:active {
 }
 .accordion-body {
 	background-color: #666a80;
-	color: white;
+	color: #5d5179;
 }
 .series-link {
 	text-decoration: underline;
