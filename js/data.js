@@ -1,7 +1,7 @@
 var data = {
 	images: [
 		{
-			src: ["https://www.imgchest.com/p/qb4z8mord4j"],
+			src: ["https://cdn.imgchest.com/files/y8xcnkvn3l4.jpg"],
 			thumbnail: "https://cdn.imgchest.com/files/y8xcnlqqlb4.png",
 			title: "Untitled Bunny Suit Gift Art",
 			artist: "DarknesS",
@@ -9,7 +9,7 @@ var data = {
 			art_url: "https://bsky.app/profile/exaltedbrand.bsky.social/post/3lhyl4tr73k2p",
 			desc: "fighting heroes by moonlight / winning buns by daylight / never running from a real fight / she is the one wishing me a happy birthday 🌻🎂",
 			date_str: "2/12/25",
-			tags: ["fireemblem"],
+			tags: ["fireemblem, thrasir, gift"],
 			hidden: false
 		},
 		{
