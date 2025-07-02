@@ -12,6 +12,18 @@ var data = {
 			tags: ["fireemblem, thrasir, gift"],
 			hidden: false
 		},
+				{
+			src: ["https://cdn.imgchest.com/files/4z9cvwjbkb7.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/7w6c2v6ww3y.jpg",
+			title: "The Missing Flock",
+			artist: "[find me]",
+			artist_url: "",
+			art_url: "",
+			desc: "",
+			date_str: "The others teased him about it, of course. That no matter how long or far they traveled, Tiz would always be a shepherd.",
+			tags: ["bravelydefault, tiz, agnes, edea, ringabel, basedonfic, gift"],
+			hidden: true
+		},
 		{
 			src: [""],
 			thumbnail: "",
