@@ -116,7 +116,7 @@ body {
 	display: none;
 }
 a {
-	color: #b3bdff;
+	color: #5D5179;
 }
 a:hover, a:active {
 	color: #959ccf;
@@ -214,7 +214,7 @@ a:hover, a:active {
 .series-link {
 	text-decoration: underline;
 	cursor: pointer;
-	color: #b3bdff;
+	color: #5D5179;
 }
 .series-link:hover, .series-link:active {
 	color: #959ccf;
