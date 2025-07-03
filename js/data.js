@@ -38,7 +38,7 @@ var data = {
 		},
 		{
 			src: ["https://cdn.imgchest.com/files/7mmc9rmgwv7.jpg"],
-			thumbnail: "https://cdn.imgchest.com/files/y8xcnlqqlb4.png",
+			thumbnail: "https://cdn.imgchest.com/files/y2pckon9w97.png",
 			title: "A New Friend",
 			artist: "Trevor",
 			artist_url: "https://bsky.app/profile/ddbofthestars.bsky.social",
@@ -50,7 +50,7 @@ var data = {
 		},
 		{
 			src: ["https://cdn.imgchest.com/files/4z9cvwjbkb7.jpg"],
-			thumbnail: "https://cdn.imgchest.com/files/7w6c2v6ww3y.jpg",
+			thumbnail: "https://cdn.imgchest.com/files/7ogcbkj82zy.png",
 			title: "The Missing Flock",
 			artist: "adalheidis",
 			artist_url: "https://bsky.app/profile/adalheidis.bsky.social",
@@ -70,6 +70,18 @@ var data = {
 			desc: "A gift from an anonymous artist (later identified with permission) on the Bravely Default Kink Meme post of the fic of the same name.",
 			date_str: "April 14 2014",
 			tags: ["sfw", "bravelydefault", "tiz", "agnes", "basedonfic", "gift"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/yvdcwd8zbey.jpg", "https://cdn.imgchest.com/files/yxkczgdvjd7.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/7pjcqw9bx67.png",
+			title: "Cadell, Dragon of the Stars",
+			artist: "47ness",
+			artist_url: "https://47ness.carrd.co/",
+			art_url: "https://47ness.tumblr.com/post/189323031026/dragonship-concepts-final-design-original",
+			desc: "A design commission for a spacecraft with a special artificial consciousness called a 'Dragon'.",
+			date_str: "Nov 17 2019",
+			tags: ["sfw", "azureexpanse"],
 			hidden: false
 		},
 		{
