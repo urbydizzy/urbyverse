@@ -9,7 +9,7 @@ var data = {
 			art_url: "",
 			desc: "",
 			date_str: "",
-			tags: ["sfw", "nsfw", "extreme", "fireemblem", "bravelydefault", "thrasir", "tiz", "agnes", "edea", "ringabel", "basedonfic", "gift"],
+			tags: ["sfw", "nsfw", "extreme", "fireemblem", "bravelydefault", "thrasir", "veronica", "ylgr", "tiz", "agnes", "edea", "ringabel", "basedonfic", "gift"],
 			hidden: true
 		},
 		{
@@ -20,8 +20,20 @@ var data = {
 			artist_url: "https://bsky.app/profile/did:plc:3xdyjimydh6q3b6cg5z26mu3",
 			art_url: "https://bsky.app/profile/exaltedbrand.bsky.social/post/3lhyl4tr73k2p",
 			desc: "fighting heroes by moonlight / winning buns by daylight / never running from a real fight / she is the one wishing me a happy birthday 🌻🎂",
-			date_str: "2/12/25",
+			date_str: "Feb 12 2025",
 			tags: ["sfw", "fireemblem", "thrasir", "gift"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/7mmc9rmgwv7.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/y8xcnlqqlb4.png",
+			title: "A New Friend",
+			artist: "Trevor",
+			artist_url: "https://bsky.app/profile/ddbofthestars.bsky.social",
+			art_url: "https://x.com/ddbofthestars/status/1740042675263586684",
+			desc: "Veronica offers her dear friend a special Emblian courier to return the kindness Yglr showed her years prior with the gift of Bolt, the black-colored Niflese courier rabbit.",
+			date_str: "December 27 2025",
+			tags: ["sfw", "fireemblem", "veronica", "ylgr", "basedonfic", "gift"],
 			hidden: false
 		},
 		{
@@ -37,13 +49,13 @@ var data = {
 			hidden: false
 		},
 		{
-			src: ["https://www.imgchest.com/p/o24a8mj3d7l"],
-			thumbnail: "https://cdn.imgchest.com/files/7w6c2v6ww3y.jpg",
+			src: ["https://cdn.imgchest.com/files/45xcv9nz8v7.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/7lxcpdz9mo7.png",
 			title: "Best Said Plans",
 			artist: "Anonymous (Trapinchmon)",
 			artist_url: "https://trapinchmon.tumblr.com/",
 			art_url: "https://urbydizzy.tumblr.com/post/82714477493/a-really-kind-anon-drew-this-based-on-my-story",
-			desc: "A gift from an anonymous artist on the Bravely Default Kink Meme post of the fic of the same name.",
+			desc: "A gift from an anonymous artist (later identified with permission) on the Bravely Default Kink Meme post of the fic of the same name.",
 			date_str: "April 14 2014",
 			tags: ["sfw", "bravelydefault", "tiz", "agnes", "basedonfic", "gift"],
 			hidden: false
