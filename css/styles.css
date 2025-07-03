@@ -31,12 +31,12 @@ body {
 	border: none;
 	border-radius: 0.25rem;
 	padding: 10px;
-	background-color: #5D5179;
+	background-color: #9185AD;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 	font-size: 1rem;
 }
 .sidebar-item-button:hover {
-	background-color: #658475;
+	background-color: #5D5179;
 	cursor: pointer;
 }
 .sidebar-item-button-link {
@@ -146,7 +146,7 @@ body {
 	display: none;
 }
 a {
-	color: #b3bdff;
+	color: #5D5179;
 }
 a:hover, a:active {
 	color: #959ccf;
