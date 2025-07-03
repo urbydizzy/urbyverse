@@ -31,7 +31,7 @@ body {
 	border: none;
 	border-radius: 0.25rem;
 	padding: 10px;
-	background-color: #c97447;
+	background-color: #caceba;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 	font-size: 1rem;
 }
@@ -120,7 +120,7 @@ body {
 	max-width: 95%;
 }
 .modal-content {
-	background-color: #c97447;
+	background-color: #caceba;
 }
 .modal-header {
 	border-bottom: 1px solid #658475;
@@ -197,7 +197,7 @@ a:hover, a:active {
 
 #dropdownMenuLink {
 	color: #fff;
-	background-color: #c97447;
+	background-color: #caceba;
 	border-color: #658475;
 }
 #dropdownMenuLink:hover, #dropdownMenuLink:active, #dropdownMenuLink:focus {
@@ -213,7 +213,7 @@ a:hover, a:active {
 }
 #datepicker {
 	color: #fff;
-	background-color: #c97447;
+	background-color: #caceba;
 	border-color: #658475;
 }
 #datepicker-dropdown {
@@ -223,7 +223,7 @@ a:hover, a:active {
 	width: 190px;
 }
 #datepicker-reset {
-	background-color: #c97447;
+	background-color: #caceba;
 	font-weight: bold;
 	color: #01200F;
 }
@@ -242,7 +242,7 @@ a:hover, a:active {
 	border: none;
 	padding: 0.4375rem 0.75rem;
 	border-radius: 0.25rem;
-	background-color: #c97447;
+	background-color: #caceba;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 .shuffle-button:hover {
@@ -258,7 +258,7 @@ a:hover, a:active {
 	border: none;
 	padding: 0.4375rem 0.75rem;
 	border-radius: 0.25rem;
-	background-color: #c97447;
+	background-color: #caceba;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 .show-all-button:hover {
