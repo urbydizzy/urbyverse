@@ -3,6 +3,8 @@ var series_link_clicked = false;
 var series_link_clicked_index = null;
 // Keeps track of tags and which images to show - used in ready()'s shuffle function and createTagsDropdown()
 var tags_to_show = {};
+// Keeps track if Show All mode is on
+var show_all_mode = false;
 
 // When the document finished loading and is ready...
 $(document).ready(function() {
@@ -11,15 +13,57 @@ $(document).ready(function() {
 	// Set of tags collected from the images
 	const tags = new Set();
 	setUpGallery(images, tags, false);
+	createDatePickerDropdown();
 	createTagsDropdown(tags);
+	showDefaultImages();
 	updateImageCountLabel();
 
 	// Shuffle the image order when the shuffle button is clicked
 	$("#shuffle").click(function() {
 		setUpGallery(images, tags, true);
 
-		// Show only the images that need to be shown (filtering by tags)
-		showImagesThatMatch();
+		if (!show_all_mode) {
+			// Show only the images that need to be shown (filtering by tags)
+			showImagesThatMatch();
+		}
+	});
+
+	// Shows all images and resets the Filter
+	$("#show-all").click(function() {
+		if (show_all_mode) {
+			// Toggle of show all mode which will revert to default images
+			show_all_mode = false;
+			$(this).removeClass("show-all-button-active");
+			showDefaultImages();
+			return;
+		}
+		else {
+			show_all_mode = true;
+			var nsfw_confirmation = nsfwVerification();
+			if (!nsfw_confirmation) {
+				show_all_mode = false;
+				return;
+			}
+		}
+		// Handle when show all mode is turned on
+		// Reset filter and search bar and then show all images
+		$(this).addClass("show-all-button-active");
+		$("#tags-dropdown input[type=checkbox]").each(function() {
+			if($(this).closest("li").hasClass("active")) {
+				this.click();
+			}
+		});
+		document.getElementById("search-bar").value = "";
+		$("#year").val("None");
+		$("#month").val("None");
+		var images = data.images;
+		var search_str = document.getElementById("search-bar").value.toLowerCase();
+		for (var i = 0; i < images.length; i++) {
+			$("#img"+i).show();
+		}
+		extremeTagCheck();
+		$(".hidden-image").hide();
+		updateImageCountLabel();
 	});
 
 	// Handle closing the modal when the back button is clicked
@@ -28,7 +72,8 @@ $(document).ready(function() {
 	// If the URL has a hash, then open that image based on the hash index
 	if (window.location.hash) {
 		var hash_index = window.location.hash.substring(1);
-		$("#img"+hash_index).click();
+		// Permalink disabled for this site
+		//$("#img"+hash_index).click();
 	}
 });
 
@@ -123,7 +168,7 @@ function setUpGallery(images, tags, shuffleOrder) {
 			tags.add(image.tags[t]);
 		}
 		// If image is hidden, then don't show it
-		gallery_html += "<a data-bs-toggle='modal' data-bs-target='#imageModal' class='gallery-img"+((image.hidden) ? " hidden-image" : "") +"' index='"+index+"' id='img"+index+"'><img src='"+image.thumbnail+"' alt='"+image.alt+"' index='"+index+"' class='"+tags_class+"'></a>";
+		gallery_html += "<a data-bs-toggle='modal' data-bs-target='#imageModal' class='gallery-img"+((image.hidden) ? " hidden-image" : "") +"' index='"+index+"' id='img"+index+"'><img src='"+image.thumbnail+"' alt='"+image.alt+"' index='"+index+"' class='"+tags_class+"'><div class='thumbnail-title'>"+image.title+"</div></a>";
 	}
 	$("#gallery").html(gallery_html);
 
@@ -202,9 +247,50 @@ function updateImageCountLabel() {
 // Map a string to another string
 function translateWord(word) {
 	var translations = {
-		hooters: "Hooters 🦉",
-		nsfw: "NSFW 🔞",
-		other: "Other 🃏"
+		sfw: "🟢 SFW",
+		nsfw: "🔴 NSFW",
+		extreme: "⚫ Extreme",
+		gifts_given: "🎁 Gifts (to others)",
+		gifts_received: "🎁 Gifts (from others)",
+		fireemblem: "Fire Emblem",
+		collab: "🤝 Collabs",
+		edelgard: "👤 Edelgard",
+		eirika: "👤 Eirika",
+		eleanor: "👤 Eleanor",
+		micaiah: "👤 Micaiah",
+		laura: "👤 Laura",
+		lucina: "👤 Lucina",
+		eeby: "👤 Eeby",
+		lif: "👤 Líf",
+		thrasir: "👤 Thrasir",
+		flayn: "👤 Flayn",
+		camilla: "👤 Camilla",
+		caeda: "👤 Caeda",
+		mirabilis: "👤 Mirabilis",
+		loki: "👤 Loki",
+		lysithea: "👤 Lysithea",
+		severa: "👤 Severa",
+		tiki: "👤 Tiki",
+		ingrid: "👤 Ingrid",
+		catria: "👤 Catria",
+		sayri: "👤 Say'ri",
+		rhea: "👤 Rhea",
+		lumera: "👤 Lumera",
+		kris: "👤 Kris",
+		lianna: "👤 Lianna",
+		eebeebi: "👤 Eebeebi",
+		sharena: "👤 Sharena",
+		veyle: "👤 Veyle",
+		annette: "👤 Annette",
+		anna: "👤 Anna",
+		veronica: "👤 Veronica",
+		ylgr: "👤 Ylgr",
+		shamir: "👤 Shamir",
+		grima: "👤 Grima",
+		agnes: "👤 Agnès",
+		aurelia: "👤 Aurelia",
+		other: "👤 Other/Misc",
+		request: "🗳️ Requests"
 	};
 	if (word in translations) {
 		return translations[word];
@@ -212,6 +298,37 @@ function translateWord(word) {
 	else {
 		return word;
 	}
+}
+
+// Create date picker dropdown
+function createDatePickerDropdown() {
+	// Start the counter at 2021
+	var year_dropdown_HTML = "<option selected value='None'>None</option>";
+	for (var i = 2021; i <= new Date().getFullYear(); i += 1) {
+		year_dropdown_HTML += "<option value='"+i+"'>"+i+"</option>";
+	}
+	$("#year").html(year_dropdown_HTML);
+
+	var month_dropdown_HTML = "<option selected value='None'>None</option>";
+	var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+	for (var i = 0; i < months.length; i += 1) {
+		month_dropdown_HTML += "<option value='"+months[i]+"'>"+months[i]+"</option>";
+	}
+	$("#month").html(month_dropdown_HTML);
+
+	$(".datepicker-option").on("change", function() {
+		var year = $("#year").val();
+		var month = $("#month").val();
+		show_all_mode = false;
+		$("#show-all").removeClass("show-all-button-active");
+		showImagesThatMatch();
+	});
+
+	$("#datepicker-reset").click(function() {
+		$("#year").val("None");
+		$("#month").val("None");
+		showImagesThatMatch();
+	});
 }
 
 // Create the tags dropdown menu
@@ -229,11 +346,6 @@ function createTagsDropdown(tags) {
 	});
 	$("#tags-dropdown").html(tags_dropdown_HTML);
 
-	// By default, hide images with tags
-	for (var tag in tags_to_show) {
-		$("."+tag).parent().hide();
-	}
-
 	// When a checkbox is checked/unchecked in the dropdown menu...
 	$(".checkbox-menu").on("change", "input[type='checkbox']", function() {
 		var tag = $(this)[0].value;
@@ -249,9 +361,24 @@ function createTagsDropdown(tags) {
 			}
 		}
 
+		// If the tag is "extreme" and is checked, then ask for extreme confirmation
+		if (tag == "extreme" && $(this).closest("input").prop("checked")) {
+			// The checked property is set to true at this call because clicking on the checkbox causes it to flip checked at this moment
+			var extreme_confirmation = extremeVerification();
+			// Set the checkbox to unchecked if Cancel was selected instead of OK
+			if (!extreme_confirmation) {
+				$(this).closest("input").prop("checked", false);
+				return false;
+			}
+		}
+
 		// Mark the tag in the map to true if checked and false if unchecked
 		$(this).closest("li").toggleClass("active", this.checked);
 		if ($(this).closest("li").hasClass("active")) {
+			// Disable show all mode when the user selects a tag from the dropdown
+			// Disabling only at this step allows the user to shuffle when in show all mode without resetting
+			show_all_mode = false;
+			$("#show-all").removeClass("show-all-button-active");
 			tags_to_show[tag] = true;
 		}
 		else {
@@ -266,6 +393,36 @@ function createTagsDropdown(tags) {
 		// When the search bar is updated, update the filters
 		showImagesThatMatch();
 	});
+}
+
+function nsfwVerification() {
+	if (localStorage.getItem("nsfwVerified") && localStorage.getItem("nsfwVerified") == "verified") {
+		return true;
+	}
+	var nsfw_confirmation = confirm("By clicking OK, you are confirming that you are 18 years or older and are okay with NSFW images being displayed on your screen. Click Cancel if you are not.");
+	if (!nsfw_confirmation) {
+		localStorage.setItem("nsfwVerified", "notVerified")
+		return false;
+	}
+	else {
+		localStorage.setItem("nsfwVerified", "verified")
+		return true;
+	}
+}
+
+function extremeVerification() {
+	if (localStorage.getItem("extremeVerified") && localStorage.getItem("extremeVerified") == "verified") {
+		return true;
+	}
+	var extreme_confirmation = confirm("WARNING: This section contains commissions that are more intense than most – for example through inhuman characters, allusions to harm, and/or dubiously consensual sexual content. By clicking OK, you are confirming that you are 18 years or older and are okay with this content being displayed on your screen. Click Cancel if you are not.");
+	if (!extreme_confirmation) {
+		localStorage.setItem("extremeVerified", "notVerified")
+		return false;
+	}
+	else {
+		localStorage.setItem("extremeVerified", "verified")
+		return true;
+	}
 }
 
 // When a series link is clicked, then it closes the modal and changes the content and re-opens it with the new image
@@ -318,8 +475,8 @@ function backButtonHideModal() {
 	});
 }
 
-// Filters images by tags and search using 'AND' logic.
-// The image must have exactly the tags that are specified by the filter
+// Filters images by tags and search using danbooru logic.
+// The image must include the tags indicated in the dropdown
 // AND
 // The image must also have the search term in one of the fields to be shown.
 function showImagesThatMatch() {
@@ -330,33 +487,46 @@ function showImagesThatMatch() {
 			visible_tags.push(tag_key)
 		}
 	}
-	var visible_tags_str = visible_tags.sort().toString();
+
+	var year = $("#year").val();
+	var month = $("#month").val();
+	var date_picked = year != "None" && month != "None";
+
+	// Show default images if tags have not been selected in the Filter
+	if (visible_tags.length == 0 && !show_all_mode && !date_picked) {
+		showDefaultImages();
+		return;
+	}
 
 	// Then compare it with the tags of each image. If they match, then show. Otherwise, hide.
 	var images = data.images;
 	var search_str = document.getElementById("search-bar").value.toLowerCase();
-	for (var i = 0; i < images.length; i++) {
-		var tags_str = images[i].tags.sort().toString();
-		if (visible_tags_str == tags_str) {
-			if (search_str == "") {
-				$("#img"+i).show();
-			}
-			else {
-				// The search bar is not empty, so check the data fields for matches
-				if (images[i].title.toLowerCase().includes(search_str)
-					|| images[i].desc.toLowerCase().includes(search_str)
-					|| images[i].artist.toLowerCase().includes(search_str)) {
-					$("#img"+i).show();
-				}
-				else {
-					$("#img"+i).hide();
-				}
-			}
-		}
-		else {
-			$("#img"+i).hide();
+
+	if (show_all_mode) {
+		for (var i = 0; i < images.length; i++) {
+			searchCheck(search_str, i, images);
 		}
 	}
+	else {
+		for (var i = 0; i < images.length; i++) {
+			var tags_arr = images[i].tags;
+
+			// The interesection of selected tags and image tags must be the same number of elements as the number of selected tags
+			// This will give danbooru style logic where an image must include the selected tags
+			if (intersect(visible_tags, tags_arr).length == visible_tags.length) {
+				searchCheck(search_str, i, images);
+			}
+			else {
+				$("#img"+i).hide();
+			}
+		}
+	}
+	// Hide NSFW entries unless selected
+	if (!tags_to_show["nsfw"] && !show_all_mode) {
+		$(".nsfw").parent().hide();
+	}
+
+	extremeTagCheck();
 
 	// Hide hidden images no matter what
 	$(".hidden-image").hide();
@@ -364,17 +534,74 @@ function showImagesThatMatch() {
 	updateImageCountLabel();
 }
 
-function nsfwVerification() {
-	if (localStorage.getItem("nsfwVerified") && localStorage.getItem("nsfwVerified") == "verified") {
-		return true;
+// These are the images that will show up on the page when all filters are empty
+function showDefaultImages() {
+	var images = data.images;
+
+	for (var i = 0; i < images.length; i++) {
+		var tags_arr = images[i].tags;
+
+		var search_str = document.getElementById("search-bar").value.toLowerCase();
+		if (tags_arr.includes("sfw")) {
+			searchCheck(search_str, i, images);
+		}
+		else {
+			$("#img"+i).hide();
+		}
 	}
-	var nsfw_confirmation = confirm("By clicking OK, you are confirming that you are 18 years or older and are okay with NSFW images being displayed on your screen. Click Cancel if you are not.");
-	if (!nsfw_confirmation) {
-		localStorage.setItem("nsfwVerified", "notVerified")
-		return false;
+	$(".hidden-image").hide();
+	updateImageCountLabel();
+}
+
+// Returns the intersection of array "a" and "b"
+function intersect(a, b) {
+	var setA = new Set(a);
+	var setB = new Set(b);
+	var intersection = new Set([...setA].filter(x => setB.has(x)));
+	return Array.from(intersection);
+}
+
+function searchCheck(search_str, image_index, images) {
+	var year = $("#year").val();
+	var month = $("#month").val();
+	var date_picked = year != "None" && month != "None";
+	var date_matched = images[image_index].date_str && images[image_index].date_str.includes(year) && images[image_index].date_str.includes(month);
+
+	if (search_str == "") {
+		if (date_picked && date_matched) {
+			$("#img"+image_index).show();
+		}
+		else if (date_picked && !date_matched) {
+			$("#img"+image_index).hide();
+		}
+		else {
+			$("#img"+image_index).show();
+		}
 	}
 	else {
-		localStorage.setItem("nsfwVerified", "verified")
-		return true;
+		// The search bar is not empty, so check the data fields for matches
+		if (images[image_index].title.toLowerCase().includes(search_str)
+			|| images[image_index].desc.toLowerCase().includes(search_str)
+			|| images[image_index].artist.toLowerCase().includes(search_str)) {
+			if (date_picked && date_matched) {
+				$("#img"+image_index).show();
+			}
+			else if (date_picked && !date_matched) {
+				$("#img"+image_index).hide();
+			}
+			else {
+				$("#img"+image_index).show();
+			}
+		}
+		else {
+			$("#img"+image_index).hide();
+		}
+	}
+}
+
+// Hide extreme tags that should only show when selected
+function extremeTagCheck() {
+	if (!tags_to_show["extreme"]) {
+		$(".extreme").parent().hide();
 	}
 }
