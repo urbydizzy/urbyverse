@@ -31,7 +31,7 @@ body {
 	border: none;
 	border-radius: 0.25rem;
 	padding: 10px;
-	background-color: #caceba;
+	background-color: #5D5179;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 	font-size: 1rem;
 }
