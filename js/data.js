@@ -9,8 +9,20 @@ var data = {
 			art_url: "",
 			desc: "",
 			date_str: "",
-			tags: ["sfw", "nsfw", "extreme", "fireemblem", "bravelydefault", "thrasir", "veronica", "ylgr", "tiz", "agnes", "edea", "ringabel", "basedonfic", "gift"],
+			tags: ["sfw", "nsfw", "extreme", "fireemblem", "bravelydefault", "lif", "thrasir", "veronica", "ylgr", "tiz", "agnes", "edea", "ringabel", "basedonfic", "gift"],
 			hidden: true
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png"],
+			thumbnail: "https://cdn.imgchest.com/files/7w6c2vpmzey.png",
+			title: "Winter Comfort",
+			artist: "Sierra117renner",
+			artist_url: "https://www.instagram.com/sierra117renner/",
+			art_url: null,
+			desc: "Thrasir has a warm drink and a festive outfit.",
+			date_str: "Dec 20 2020",
+			tags: ["sfw", "fireemblem", "thrasir"],
+			hidden: false
 		},
 		{
 			src: ["https://cdn.imgchest.com/files/y8xcnkvn3l4.jpg"],
