@@ -25,6 +25,30 @@ var data = {
 			hidden: false
 		},
 		{
+			src: ["https://cdn.imgchest.com/files/46acqb999j7.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/ye3c2dllab4.png",
+			title: "Life Adjusts",
+			artist: "Memeh",
+			artist_url: "https://memeh.carrd.co/",
+			art_url: "https://x.com/lazymimium/status/1401337716940447753",
+			desc: "Two generals share a quiet moment together.",
+			date_str: "Jun 2 2021",
+			tags: ["sfw", "fireemblem", "thrasir", "lif", "basedonfic"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/4jdcvjnd3n4.png"],
+			thumbnail: "https://cdn.imgchest.com/files/yd5cerjvga4.png",
+			title: "Radiant",
+			artist: "Dux",
+			artist_url: "https://bsky.app/profile/dux-draws.bsky.social",
+			art_url: null,
+			desc: "two hel generals at the beach, what will they do",
+			date_str: "Aug 22 2022",
+			tags: ["sfw", "fireemblem", "thrasir", "lif", "basedonfic"],
+			hidden: false
+		},
+		{
 			src: ["https://cdn.imgchest.com/files/y8xcnkvn3l4.jpg"],
 			thumbnail: "https://cdn.imgchest.com/files/y8xcnlqqlb4.png",
 			title: "Untitled Bunny Suit Gift Art",
