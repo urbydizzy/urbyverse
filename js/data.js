@@ -13,6 +13,66 @@ var data = {
 			hidden: true
 		},
 		{
+			src: ["https://cdn.imgchest.com/files/yq9c3emm9b4.webp"],
+			thumbnail: "https://cdn.imgchest.com/files/y8xcnlvma24.png",
+			title: "Outrun the Wolves",
+			artist: "DarknesS",
+			artist_url: "https://bsky.app/profile/did:plc:3xdyjimydh6q3b6cg5z26mu3",
+			art_url: null,
+			desc: "hel generals bein cool",
+			date_str: "Feb 12 2023",
+			tags: ["sfw", "fireemblem", "thrasir", "lif"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/y2pckolzqv7.webp"],
+			thumbnail: "https://cdn.imgchest.com/files/4z9cvwrr2w7.png",
+			title: "Untitled Courier Bunny Gift Art",
+			artist: "DarknesS",
+			artist_url: "https://bsky.app/profile/did:plc:3xdyjimydh6q3b6cg5z26mu3",
+			art_url: null,
+			desc: "Two Emblian princesses enjoy the company of a soft friend.",
+			date_str: "Feb 12 2023",
+			tags: ["sfw", "fireemblem", "thrasir", "veronica"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/yxkczgaodo7.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/45xcv93wdg7.png",
+			title: "Endless Horizons",
+			artist: "missdash",
+			artist_url: "https://bsky.app/profile/did:plc:3xdyjimydh6q3b6cg5z26mu3",
+			art_url: "https://x.com/missdash_/status/1460039421525311488",
+			desc: "Líf and Thrasir join the Askran Royal Guard, for a time.",
+			date_str: "Nov 15 2021",
+			tags: ["sfw", "fireemblem", "thrasir", "lif", "basedonfic"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png"],
+			thumbnail: "https://cdn.imgchest.com/files/7w6c2vpmzey.png",
+			title: "Winter Comfort",
+			artist: "Sierra117renner",
+			artist_url: "https://www.instagram.com/sierra117renner/",
+			art_url: null,
+			desc: "Thrasir has a warm drink and a festive outfit.",
+			date_str: "Dec 20 2020",
+			tags: ["sfw", "fireemblem", "thrasir"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png"],
+			thumbnail: "https://cdn.imgchest.com/files/7w6c2vpmzey.png",
+			title: "Winter Comfort",
+			artist: "Sierra117renner",
+			artist_url: "https://www.instagram.com/sierra117renner/",
+			art_url: null,
+			desc: "Thrasir has a warm drink and a festive outfit.",
+			date_str: "Dec 20 2020",
+			tags: ["sfw", "fireemblem", "thrasir"],
+			hidden: false
+		},
+		{
 			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png"],
 			thumbnail: "https://cdn.imgchest.com/files/7w6c2vpmzey.png",
 			title: "Winter Comfort",
