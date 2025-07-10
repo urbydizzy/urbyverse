@@ -51,7 +51,7 @@ var data = {
 		{
 			src: ["https://cdn.imgchest.com/files/7pjcqwrodg7.jpg"],
 			thumbnail: "https://cdn.imgchest.com/files/yd5cerplak4.png",
-			title: "Endless Horizons",
+			title: "Speedwells",
 			artist: "fubbz",
 			artist_url: "https://bsky.app/profile/fyllophobia.bsky.social",
 			art_url: null,
@@ -63,7 +63,7 @@ var data = {
 		
 		{
 			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png"],
-			thumbnail: "https://cdn.imgchest.com/files/7w6c2vpmzey.png",
+			thumbnail: "https://cdn.imgchest.com/files/yd5cer83rj4.png",
 			title: "Winter Comfort",
 			artist: "Sierra117renner",
 			artist_url: "https://www.instagram.com/sierra117renner/",
