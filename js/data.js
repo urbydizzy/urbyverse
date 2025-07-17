@@ -13,6 +13,18 @@ var data = {
 			hidden: true
 		},
 		{
+			src: ["https://cdn.imgchest.com/files/7bwckdzba67.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/yxkczg62bl7.png",
+			title: "UntitledLifthrasir Enjoyer Birthday Gift Art",
+			artist: "j",
+			artist_url: "https://x.com/abgthrasir",
+			art_url: null,
+			desc: "winter is the best season for lifthrasir enjoyers",
+			date_str: "Feb 12 2023",
+			tags: ["sfw", "fireemblem", "thrasir", "lif", "gift"],
+			hidden: false
+		},
+		{
 			src: ["https://cdn.imgchest.com/files/y2pckolzqv7.webp"],
 			thumbnail: "https://cdn.imgchest.com/files/y8xcnlvma24.png",
 			title: "Untitled Courier Bunny Gift Art",
