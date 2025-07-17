@@ -72,7 +72,18 @@ var data = {
 			tags: ["sfw", "fireemblem", "thrasir", "gift", "veronica"],
 			hidden: false
 		},
-		
+		{
+			src: ["https://cdn.imgchest.com/files/46acqg89e87.png"],
+			thumbnail: "https://cdn.imgchest.com/files/yxkczqvdod7.png",
+			title: "Promises Not Necessary",
+			artist: "fubbz",
+			artist_url: "https://bsky.app/profile/fyllophobia.bsky.social",
+			art_url: null,
+			desc: "Thrasir is bad at being a June Bride",
+			date_str: null,
+			tags: ["sfw", "fireemblem", "thrasir", "gift", "basedonfic"],
+			hidden: false
+		},
 		{
 			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png"],
 			thumbnail: "https://cdn.imgchest.com/files/yd5cer83rj4.png",
