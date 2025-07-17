@@ -85,7 +85,7 @@ var data = {
 			hidden: false
 		},
 		{
-			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png"],
+			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png", "https://cdn.imgchest.com/files/49zc2velmxy.png", "https://cdn.imgchest.com/files/4nec8lbrgv4.png", "https://cdn.imgchest.com/files/7bwck23qab7.png"],
 			thumbnail: "https://cdn.imgchest.com/files/yd5cer83rj4.png",
 			title: "Winter Comfort",
 			artist: "Sierra117renner",
@@ -94,6 +94,30 @@ var data = {
 			desc: "Thrasir has a warm drink and a festive outfit.",
 			date_str: "Dec 20 2020",
 			tags: ["sfw", "fireemblem", "thrasir"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/7pjcqkbeda7.png"],
+			thumbnail: "https://cdn.imgchest.com/files/7bwck23rla7.png",
+			title: "Devoted Líf",
+			artist: "Sierra117renner",
+			artist_url: "https://www.instagram.com/sierra117renner/",
+			art_url: null,
+			desc: "Líf wearing his Day of Devotion outfit.",
+			date_str: "May 12 2021",
+			tags: ["sfw", "fireemblem", "lif"],
+			hidden: false
+		},
+		{
+			src: ["https://cdn.imgchest.com/files/y8xcnqv6ag4.png"],
+			thumbnail: "https://cdn.imgchest.com/files/yrgcn9bdxl4.png",
+			title: "Buni Líf",
+			artist: "Sierra117renner",
+			artist_url: "https://www.instagram.com/sierra117renner/",
+			art_url: null,
+			desc: "Líf wearing a Spring outfit. (Years later I realize his chest is not blue...)",
+			date_str: "May 13 2021",
+			tags: ["sfw", "fireemblem", "lif"],
 			hidden: false
 		},
 		{
