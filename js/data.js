@@ -12,18 +12,7 @@ var data = {
 			tags: ["sfw", "nsfw", "extreme", "fireemblem", "bravelydefault", "lif", "thrasir", "veronica", "ylgr", "tiz", "agnes", "edea", "ringabel", "basedonfic", "gift"],
 			hidden: true
 		},
-		{
-			src: ["https://cdn.imgchest.com/files/7bwckdzba67.jpg"],
-			thumbnail: "https://cdn.imgchest.com/files/yxkczg62bl7.png",
-			title: "UntitledLifthrasir Enjoyer Birthday Gift Art",
-			artist: "j",
-			artist_url: "https://x.com/abgthrasir",
-			art_url: null,
-			desc: "winter is the best season for lifthrasir enjoyers",
-			date_str: "Feb 12 2023",
-			tags: ["sfw", "fireemblem", "thrasir", "lif", "gift"],
-			hidden: false
-		},
+		
 		{
 			src: ["https://cdn.imgchest.com/files/y2pckolzqv7.webp"],
 			thumbnail: "https://cdn.imgchest.com/files/y8xcnlvma24.png",
@@ -49,17 +38,33 @@ var data = {
 			hidden: false
 		},
 		{
-			src: ["https://cdn.imgchest.com/files/yxkczgaodo7.jpg"],
-			thumbnail: "https://cdn.imgchest.com/files/45xcv93wdg7.png",
-			title: "Endless Horizons",
-			artist: "missdash",
+			src: ["https://cdn.imgchest.com/files/y8xcnkvn3l4.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/y8xcnlqqlb4.png",
+			title: "Untitled Bunny Suit Gift Art",
+			artist: "DarknesS",
 			artist_url: "https://bsky.app/profile/did:plc:3xdyjimydh6q3b6cg5z26mu3",
-			art_url: "https://x.com/missdash_/status/1460039421525311488",
-			desc: "Líf and Thrasir join the Askran Royal Guard, for a time.",
-			date_str: "Nov 15 2021",
+			art_url: "https://bsky.app/profile/exaltedbrand.bsky.social/post/3lhyl4tr73k2p",
+			desc: "fighting heroes by moonlight / winning buns by daylight / never running from a real fight / she is the one wishing me a happy birthday 🌻🎂",
+			date_str: "Feb 12 2025",
+			tags: ["sfw", "fireemblem", "thrasir", "gift"],
+			hidden: false
+		},
+
+		{
+			src: ["https://cdn.imgchest.com/files/4jdcvjnd3n4.png"],
+			thumbnail: "https://cdn.imgchest.com/files/yd5cerjvga4.png",
+			title: "Radiant",
+			artist: "Dux",
+			artist_url: "https://bsky.app/profile/dux-draws.bsky.social",
+			art_url: null,
+			desc: "two hel generals at the beach, what will they do",
+			date_str: "Aug 22 2022",
 			tags: ["sfw", "fireemblem", "thrasir", "lif", "basedonfic"],
 			hidden: false
 		},
+		
+		
+
 		{
 			src: ["https://cdn.imgchest.com/files/7pjcqwrodg7.jpg"],
 			thumbnail: "https://cdn.imgchest.com/files/yd5cerplak4.png",
@@ -84,6 +89,47 @@ var data = {
 			tags: ["sfw", "fireemblem", "thrasir", "gift", "basedonfic"],
 			hidden: false
 		},
+
+		{
+			src: ["https://cdn.imgchest.com/files/7bwckdzba67.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/yxkczg62bl7.png",
+			title: "Untitled Lifthrasir Enjoyer Birthday Gift Art",
+			artist: "j",
+			artist_url: "https://x.com/abgthrasir",
+			art_url: null,
+			desc: "winter is the best season for lifthrasir enjoyers",
+			date_str: "Feb 12 2023",
+			tags: ["sfw", "fireemblem", "thrasir", "lif", "gift"],
+			hidden: false
+		},
+		
+		{
+			src: ["https://cdn.imgchest.com/files/46acqb999j7.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/ye3c2dllab4.png",
+			title: "Life Adjusts",
+			artist: "Memeh",
+			artist_url: "https://memeh.carrd.co/",
+			art_url: "https://x.com/lazymimium/status/1401337716940447753",
+			desc: "Two generals share a quiet moment together.",
+			date_str: "Jun 2 2021",
+			tags: ["sfw", "fireemblem", "thrasir", "lif", "basedonfic"],
+			hidden: false
+		},
+		
+		{
+			src: ["https://cdn.imgchest.com/files/yxkczgaodo7.jpg"],
+			thumbnail: "https://cdn.imgchest.com/files/45xcv93wdg7.png",
+			title: "Endless Horizons",
+			artist: "missdash",
+			artist_url: "https://bsky.app/profile/did:plc:3xdyjimydh6q3b6cg5z26mu3",
+			art_url: "https://x.com/missdash_/status/1460039421525311488",
+			desc: "Líf and Thrasir join the Askran Royal Guard, for a time.",
+			date_str: "Nov 15 2021",
+			tags: ["sfw", "fireemblem", "thrasir", "lif", "basedonfic"],
+			hidden: false
+		},
+		
+		
 		{
 			src: ["https://cdn.imgchest.com/files/7mmc9rmwjp7.png", "https://cdn.imgchest.com/files/49zc2velmxy.png", "https://cdn.imgchest.com/files/4nec8lbrgv4.png", "https://cdn.imgchest.com/files/7bwck23qab7.png"],
 			thumbnail: "https://cdn.imgchest.com/files/yd5cer83rj4.png",
@@ -120,42 +166,9 @@ var data = {
 			tags: ["sfw", "fireemblem", "lif"],
 			hidden: false
 		},
-		{
-			src: ["https://cdn.imgchest.com/files/46acqb999j7.jpg"],
-			thumbnail: "https://cdn.imgchest.com/files/ye3c2dllab4.png",
-			title: "Life Adjusts",
-			artist: "Memeh",
-			artist_url: "https://memeh.carrd.co/",
-			art_url: "https://x.com/lazymimium/status/1401337716940447753",
-			desc: "Two generals share a quiet moment together.",
-			date_str: "Jun 2 2021",
-			tags: ["sfw", "fireemblem", "thrasir", "lif", "basedonfic"],
-			hidden: false
-		},
-		{
-			src: ["https://cdn.imgchest.com/files/4jdcvjnd3n4.png"],
-			thumbnail: "https://cdn.imgchest.com/files/yd5cerjvga4.png",
-			title: "Radiant",
-			artist: "Dux",
-			artist_url: "https://bsky.app/profile/dux-draws.bsky.social",
-			art_url: null,
-			desc: "two hel generals at the beach, what will they do",
-			date_str: "Aug 22 2022",
-			tags: ["sfw", "fireemblem", "thrasir", "lif", "basedonfic"],
-			hidden: false
-		},
-		{
-			src: ["https://cdn.imgchest.com/files/y8xcnkvn3l4.jpg"],
-			thumbnail: "https://cdn.imgchest.com/files/y8xcnlqqlb4.png",
-			title: "Untitled Bunny Suit Gift Art",
-			artist: "DarknesS",
-			artist_url: "https://bsky.app/profile/did:plc:3xdyjimydh6q3b6cg5z26mu3",
-			art_url: "https://bsky.app/profile/exaltedbrand.bsky.social/post/3lhyl4tr73k2p",
-			desc: "fighting heroes by moonlight / winning buns by daylight / never running from a real fight / she is the one wishing me a happy birthday 🌻🎂",
-			date_str: "Feb 12 2025",
-			tags: ["sfw", "fireemblem", "thrasir", "gift"],
-			hidden: false
-		},
+		
+		
+		
 		{
 			src: ["https://cdn.imgchest.com/files/7mmc9rmgwv7.jpg"],
 			thumbnail: "https://cdn.imgchest.com/files/y2pckon9w97.png",
@@ -204,6 +217,20 @@ var data = {
 			tags: ["sfw", "azureexpanse"],
 			hidden: false
 		},
+
+		{
+			src: ["https://cdn.imgchest.com/files/7ogcbx23ovy.png", "https://cdn.imgchest.com/files/yd5cemdj294.png"],
+			thumbnail: "https://cdn.imgchest.com/files/yvdcwn2xaay.png",
+			title: "Luxurious",
+			artist: "Bramblefix",
+			artist_url: "https://bsky.app/profile/bramblefix.bsky.social",
+			art_url: null,
+			desc: "Thrasir has a habit of stealing Líf's nightshirts for herself...not like he minds.",
+			date_str: "Nov 26 2024",
+			tags: ["nsfw", "fireemblem", "thrasir", "lif", "gift"],
+			hidden: true
+		},
+		
 		{
 			src: [""],
 			thumbnail: "",
