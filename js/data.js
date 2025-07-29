@@ -228,7 +228,7 @@ var data = {
 			desc: "Thrasir has a habit of stealing Líf's nightshirts for herself...not like he minds.",
 			date_str: "Nov 26 2024",
 			tags: ["nsfw", "fireemblem", "thrasir", "lif", "gift"],
-			hidden: true
+			hidden: false
 		},
 		
 		{
